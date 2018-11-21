@@ -1,0 +1,24 @@
+<!-- You must use the following syntax with lists; it tells Razor that you're using a specific class, and then making a Model object list from that class -->
+
+@using ViewModelFun.Models
+@model List<User>
+
+<div class="row m-4">
+    <div class="col-lg-8 border border-dark rounded">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center m-4">
+                <h2>Here Are Some Users</h2>
+            </div>
+        </div>
+        <div class="row m-4">
+            <div class="col-lg text-center">
+                <!-- inside the foreach arguments, you do not need to use the @ sign for the Model -->
+                @foreach(var user in Model)
+                    {
+                        <!-- the model now becomes @user do to the forloop argument -->
+                        <h3>@user.FirstName @user.LastName</h3>
+                    }
+            </div>
+        </div>
+    </div>
+</div>

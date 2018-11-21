@@ -1,0 +1,19 @@
+<!-- Strings can be passed to the razor engine like this -->
+
+@model string
+
+<div class="row m-4">
+    <div class="col-lg-8 border border-dark rounded">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 text-align-center m-4">
+                <h2>Here is a Message!</h2>
+            </div>
+        </div>
+        <div class="row m-4">
+            <div class="justify-content-center">
+                <!-- strings are simple, just using the @Model syntax, once declared -->
+                <p>@Model</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<!-- This is how you set a model to be accessed from a class/object -->
+
+@model ViewModelFun.Models.User
+
+<div class="row m-4">
+    <div class="col-lg-8 border border-dark rounded">
+        <div class="row justify-content-center">
+            <div class="col text-center m-4">
+                <h2>Here is a User</h2>
+            </div>
+        </div>
+        <div class="row m-4">
+            <div class="col-lg text-center">
+                <!-- Access the object by using @Model, you can access the fields/properties with theri given names -->
+                <h3>@Model.FirstName @Model.LastName</h3>
+            </div>
+        </div>
+    </div>
+</div>
